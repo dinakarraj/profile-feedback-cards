@@ -1,0 +1,104 @@
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+.container
+{
+    
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 100px 70px;
+  
+}
+img
+{
+    border-radius: 50%;
+}
+
+.box
+{
+    border-radius: 2.5%;
+    padding: 20px 20px;
+    box-shadow: 0 4px 12px rgba(108, 8, 176, 0.1); 
+}
+.daniel
+{
+    color: #fff;
+    border-radius: 5px;
+    background-image: url("bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color:  hsl(263, 55%, 52%);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.wrapper_outside
+{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper_inside
+{
+    display: flex;
+    gap:20px;
+}
+.text_info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.jonathan
+{
+    color: #fff;
+    background-color: hsl(224, 10%, 45%);
+}
+.kirra
+{
+    background-color: hsl(214, 17%, 92%);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+}
+.jeanette
+{
+    background-color: white
+}
+.patrick
+{
+    color:white;
+    background-color: hsl(219, 29%, 14%);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.wrapper_outside .main_heading
+{
+    font-size: 21px;
+    font-weight: 500;
+}
+.wrapper_outside .para_Review
+{
+    font-size: 14px;
+    line-height: 1.6
+}
+.wrapper_outside
+{
+    gap:20px;
+}
+
+@media (min-width:375px) and (max-width: 768px) {
+  .container
+  {
+    display: flex;
+    flex-direction: column;
+    padding:40px 20px;
+  }
+  .kirra
+  {
+    order: 5;
+  }
+}
